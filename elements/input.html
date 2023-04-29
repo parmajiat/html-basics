@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parmajiat" />
+    <meta name="keywords" content="Parmajiat, Foundation, Canada, Qatar" />
+    <title>HTML5 Input</title>
+    <link href="../styles/reset.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table th,
+        table td {
+            padding: 5px;
+            font-weight: 500;
+            border: 1px solid #e3e3e3;
+            height: 30px;
+        }
+
+        table tr th:first-child {
+            text-align: end;
+        }
+
+        table tr th:last-child {
+            text-align: start;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"],
+        input[type="time"],
+        input[type="datetime-local"],
+        input[type="month"],
+        input[type="week"],
+        input[type="color"],
+        input[type="search"],
+        input[type="file"],
+        input[type="url"] {
+            height: 2.25rem;
+            width: 16rem;
+            padding: 0 .5rem;
+        }
+
+        input[type="image"] {
+            height: 3rem;
+            width: 3rem
+        }
+
+        input[type="color"] {
+            width: 2.5rem;
+            height: 2.25rem;
+            padding: 0;
+        }
+
+        input[type="range"] {
+            width: 100%;
+        }
+
+        input[type="file"] {
+            padding: 5px;
+        }
+
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"] {
+            width: 70px;
+            height: 32px;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3 dir="rtl">أنواع حقول الإدخال بلغة HTML</h3>
+    <table>
+        <tr>
+            <th>Input text</th>
+            <td>
+                <input type="text" placeholder="Name">
+            </td>
+            <th>حقل نصي</th>
+        </tr>
+        <tr>
+            <th>Input number</th>
+            <td>
+                <input type="number" placeholder="Count">
+            </td>
+            <th>حقل عددي</th>
+        </tr>
+        <tr>
+            <th>Input password</th>
+            <td>
+                <input type="password" placeholder="*******">
+            </td>
+            <th>حقل كلمة مرور</th>
+        </tr>
+        <tr>
+            <th>Input tel</th>
+            <td>
+                <input type="tel" placeholder="00974 77141470">
+            </td>
+            <th>حقل رقم هاتف -موبايل</th>
+        </tr>
+        <tr>
+            <th>Input email</th>
+            <td>
+                <input type="email" placeholder="info@parmajiat.com">
+            </td>
+            <th>حقل بريد إلكتروني</th>
+        </tr>
+        <tr>
+            <th>Input date</th>
+            <td>
+                <input type="date">
+            </td>
+            <th>حقل تاريخ</th>
+        </tr>
+        <tr>
+            <th>Input time</th>
+            <td>
+                <input type="time">
+            </td>
+            <th>حقل وقت</th>
+        </tr>
+        <tr>
+            <th>Input datetime-local</th>
+            <td>
+                <input type="datetime-local">
+            </td>
+            <th>حقل تاريخ ووقت محلي</th>
+        </tr>
+        <tr>
+            <th>Input month</th>
+            <td>
+                <input type="month">
+            </td>
+            <th>حقل شهر</th>
+        </tr>
+        <tr>
+            <th>Input week</th>
+            <td>
+                <input type="week">
+            </td>
+            <th>حقل اسبوع</th>
+        </tr>
+        <tr>
+            <th>Input search</th>
+            <td>
+                <input type="search" placeholder="Search...">
+            </td>
+            <th>حقل بحث</th>
+        </tr>
+        <tr>
+            <th>Input url</th>
+            <td>
+                <input type="url" placeholder="https://parmajiat.com">
+            </td>
+            <th>حقل رابط</th>
+        </tr>
+        <tr>
+            <th>Input file</th>
+            <td>
+                <input type="file">
+            </td>
+            <th>حقل ملف</th>
+        </tr>
+        <tr>
+            <th>Input color</th>
+            <td>
+                <input type="color">
+            </td>
+            <th>حقل لون</th>
+        </tr>
+        <tr>
+            <th>Input range</th>
+            <td>
+                <input type="range">
+            </td>
+            <th>حقل مجال</th>
+        </tr>
+        <tr>
+            <th>Input checkbox</th>
+            <td>
+                <label><input type="checkbox" value="red" checked>Red</label>
+                <label><input type="checkbox" value="green" checked>Green</label>
+                <label><input type="checkbox" value="blue">Blue</label>
+            </td>
+            <th>حقل اختيار واحد أو أكثر</th>
+        </tr>
+        <tr>
+            <th>Input radio</th>
+            <td>
+                <label><input type="radio" name="mychoice" value="red">Red</label>
+                <label><input type="radio" name="mychoice" value="green" checked>Green</label>
+                <label><input type="radio" name="mychoice" value="blue">Blue</label>
+            </td>
+            <th>حقل اختيار واحد</th>
+        </tr>
+        <tr>
+            <th>Input submit</th>
+            <td>
+                <input type="submit" value="Submit">
+            </td>
+            <th>زر إرسال</th>
+        </tr>
+        <tr>
+            <th>Input button</th>
+            <td>
+                <input type="button" value="Click">
+            </td>
+            <th>زر عادي</th>
+        </tr>
+        <tr>
+            <th>Input reset</th>
+            <td>
+                <input type="reset" value="Reset">
+            </td>
+            <th>زر مسح الحقول</th>
+        </tr>
+        <tr>
+            <th>Input image</th>
+            <td>
+                <input type="image" src="../img/button-icon.png" class="p-0">
+            </td>
+            <th>زر إدخال على شكل صورة</th>
+        </tr>
+        <tr>
+            <th>Input hidden</th>
+            <td><input type="hidden"></td>
+            <th>حقل مخفي</th>
+        </tr>
+    </table>
+
+</body>
+
+</html>
